@@ -46,14 +46,57 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Clear button
-  const clearBtn = document.getElementById('clear-btn');
-  if (clearBtn) {
-    clearBtn.addEventListener('click', () => {
-      if (nameInput) nameInput.value = '';
-      if (emailInput) emailInput.value = '';
-      if (messageInput) messageInput.value = '';
+  // Media slider
+  const slider = document.querySelector(".slider");
+  if (slider) {
+    const slides = Array.from(slider.children);
+    const prevBtn = document.querySelector(".slider-btn.prev");
+    const nextBtn = document.querySelector(".slider-btn.next");
+    let index = 0;
+    const setPosition = () => {
+      slider.style.transform = `translateX(${-index * 100}%)`;
+    };
+
+    const goNext = () => { index = (index + 1) % slides.length; setPosition(); };
+    const goPrev = () => { index = (index - 1 + slides.length) % slides.length; setPosition(); };
+
+    if (nextBtn) nextBtn.addEventListener("click", goNext);
+    if (prevBtn) prevBtn.addEventListener("click", goPrev);
+
+    // Keyboard controls
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowRight") goNext();
+      if (e.key === "ArrowLeft") goPrev();
     });
+
+    // Touch support (basic)
+    let startX = 0;
+    let isTouching = false;
+    slider.addEventListener("touchstart", (e) => {
+      isTouching = true;
+      startX = e.touches[0].clientX;
+    }, {passive: true});
+
+    slider.addEventListener("touchmove", (e) => {
+      if (!isTouching) return;
+      const currentX = e.touches[0].clientX;
+      const diff = currentX - startX;
+      // small drag visual feedback (optional)
+      slider.style.transition = "none";
+      slider.style.transform = `translateX(${diff - index * slider.offsetWidth}px)`;
+    }, {passive: true});
+
+    slider.addEventListener("touchend", (e) => {
+      isTouching = false;
+      slider.style.transition = "";
+      const endX = e.changedTouches[0].clientX;
+      const diff = endX - startX;
+      if (diff > 50) goPrev();
+      else if (diff < -50) goNext();
+      else setPosition();
+    });
+    // ensure initial position
+    setPosition();
   }
 
   // Set footer year
