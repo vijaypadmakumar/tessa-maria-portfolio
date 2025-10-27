@@ -103,3 +103,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const yearSpan = document.getElementById('year');
   if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 });
+
+// Portfolio slider logic
+document.addEventListener("DOMContentLoaded", () => {
+  const tabs = document.querySelectorAll(".tab-button");
+  const sliderTrack = document.querySelector(".slider-track");
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => {
+      tabs.forEach(btn => btn.classList.remove("active"));
+      tab.classList.add("active");
+      sliderTrack.style.transform = `translateX(-${index * 100}%)`;
+    });
+  });
+
+  // Update year automatically
+  const year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
+});
