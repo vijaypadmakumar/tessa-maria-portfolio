@@ -18,13 +18,15 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
+
 body {
     background-color: var(--cream);
     color: var(--text-main);
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 /* Typography */
@@ -346,4 +348,90 @@ footer h2 { color: var(--burgundy); font-size: clamp(2rem, 5vw, 4rem); }
     .resume-item { grid-template-columns: 1fr; gap: 6px; }
     .resume-place { text-align: left; }
     .pdf-container { grid-template-columns: 1fr; }
+}
+
+/* === MOBILE & TABLET FIXES === */
+
+/* 1. Global Overflow Kill Switch */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* 2. Responsive Typography & Layout Adjustments */
+@media (max-width: 768px) {
+    
+    /* Shrink Giant Text */
+    h1 {
+        font-size: 2.5rem; /* Down from 4.5rem */
+        line-height: 1.1;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem; /* Down from 3.5rem */
+    }
+    
+    .text-only .stat-callout {
+        font-size: 2rem;
+    }
+
+    /* Fix Navbar Layout */
+    .site-nav {
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px var(--pad);
+    }
+    
+    .nav-right {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.85rem;
+    }
+    
+    .nav-right a {
+        margin-left: 0; /* Remove left margin since we are using space-between */
+    }
+
+    /* Fix Toolkit Icons (Make them bigger) */
+    /* === MOBILE TOOLKIT GRID (2 Columns) === */
+    .toolkit-grid {
+        /* Force 2 columns instead of 3 */
+        grid-template-columns: repeat(2, 1fr);
+        /* Optional: Ensure they look distinct */
+        gap: 12px;
+    }
+
+    .tool-item img {
+        filter: grayscale(0%) !important;
+        opacity: 1;
+    }
+
+    /* Container Padding Fix */
+    .container {
+        padding: 0 16px; /* Reduce side padding to give content more room */
+    }
+    
+    /* Hero Grid Fix */
+    .hero-section {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        text-align: center;
+    }
+    
+    .hero-actions {
+        justify-content: center;
+    }
+    
+    /* Resume Item Stack */
+    .resume-item {
+        grid-template-columns: 1fr;
+        text-align: left;
+        gap: 8px;
+    }
+    
+    .resume-place {
+        text-align: left;
+    }
 }
