@@ -1,376 +1,344 @@
-<!doctype html>
-<html lang="en-GB">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <title>Tessa Maria - Portfolio</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tessa Maria | Brand Strategist</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;600;700&display=swap"
-            rel="stylesheet">
+    <!-- Navigation -->
+    <nav class="site-nav">
+        <div class="nav-left">Tessa Maria</div>
+        <div class="nav-right">
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#docs">Projects</a>
+            <a href="#contact" class="btn-nav">Let's Talk</a>
+        </div>
+    </nav>
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="style.css">
-
-        <!-- Instagram embed script (keeps the Instagram embed working) -->
-        <script async src="//www.instagram.com/embed.js"></script>
-    </head>
-    <body>
-        <header class="site-header" role="banner">
-            <div class="container header-inner">
-                <a class="brand" href="#hero"
-                    aria-label="Home — Tessa Maria">Tessa Maria</a>
-
-                <nav id="site-nav" class="site-nav" role="navigation"
-                    aria-label="Primary">
-                    <ul>
-                        <li><a href="#hero">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#work-experience">Work</a></li>
-                        <!-- <li><a href="#projects">Highlights</a></li> -->
-                         <li><a href="blog.html">My Portfolio</a></li>
-                        <li><a href="#highlights">Media</a></li>
-                        <li><a href="#get-in-touch">Contact</a></li>
-                    </ul>
-                </nav>
-
-                <button id="nav-toggle" aria-label="Toggle menu"
-                    aria-expanded="false">
-                    <span class="hamburger" aria-hidden="true"></span>
-                </button>
+    <main class="container">
+        
+        <!-- Hero Section -->
+        <header id="about" class="hero-section">
+            <div class="hero-text">
+                <h1>Tessa Maria</h1>
+                <b class="hero-sub">Brand Strategist · Marketing · Customer Relations</b>
+                <br>
+                <br>
+                <div class="hero-bio">
+                    <p>I am Brand and Marketing Strategist with over three years of experience building authentic connections between brands and their audiences.</p><br>
+                    <p>Having completed my Master’s in Brand Strategy and Management at IED Milan, I focus on the intersection of consumer psychology and market growth, I believe that successful marketing is rooted in emotional intelligence.</p><br>
+                    <p>By combining <b>analytical rigour with a customer-centric approach</b>, I streamline complex operations into meaningful brand experiences. </p><br>
+                    <p>I thrive in challenging environments where I can use my strategic and international perspective to turn market insights into long-term loyalty.</p>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="assets/tessa-maria-resume.pdf" class="btn-primary" download>
+                        <span>Download Resume</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tessa-maria/" target="_blank" class="btn-secondary">
+                        <span>LinkedIn</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect>ircle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-image-container">
+                <!-- Image will fill this space perfectly -->
+                <div class="asset-wrapper portrait">
+                    <!-- <img src="./assets/hero-picture.HEIC" alt=""> -->
+                     <img src="./assets/hero-picture-2.jpeg" alt="">
+                    <!-- <div class="placeholder-text">Portrait Photo</div> -->
+                </div>
             </div>
         </header>
 
-        <main>
-            <!-- HERO -->
-            <section id="hero" class="panel hero-panel">
-                <div class="container hero-grid">
-                    <figure class="hero-photo card reveal">
-                        <!-- Replace with your portrait at ./assets/img-2.jpeg -->
-                        <img src="./assets/img-2.jpeg"
-                            alt="Portrait of Tessa Maria" id="profile-photo">
-                        <figcaption class="photo-caption">post coffee, pre
-                            beer</figcaption>
-                    </figure>
-
-                    <div class="hero-copy reveal">
-                        <h1 class="hero-title">Tessa Maria</h1>
-                        <p class="hero-sub">Brand Strategist · Marketing and
-                            Growth · Customer Relations Expert</p>
-
-                        <p class="hero-body">
-                            <strong>Let’s cut to the chase, what do I bring to the
-                            table?</strong>
-
-                            An open mind with an international perspective and
-                            3+ years of experience in marketing, customer
-                            relations, people management and training. I have
-                            experience working with start-ups, which has helped
-                            me understand the working of a company better.
-                        </p>
-
-                        <div class="hero-ctas">
-                            <a class="btn primary" href="#work-experience">See
-                                work experience</a>
-                            <a class="btn outline"
-                                href="https://www.linkedin.com/in/tessa-maria/">My
-                                LinkedIn</a>
-                            <!-- <a class="btn outline" href="#projects">See
-                                projects</a> -->
-                            <a class="btn outline"
-                                href="./assets/Tessa_Maria_Resume.pdf"
-                                download>Download CV</a>
-                        </div>
-
-                        <ul class="highlights-inline">
-                            <li><strong>Strategic Planning</strong></li>
-                            <li><strong>Creative Thinking</strong></li>
-                            <li><strong>Market Research</strong></li>
-                            <li><strong>Proactive</strong></li>
-                        </ul>
-                        <ul class="highlights-inline">
-                            <li><strong>Data Driven</strong></li>
-                            <li><strong>Team Collaboration</strong></li>
-                            <li><strong>Adaptable</strong></li>
-                            <li><strong>Detail Oriented</strong></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ABOUT -->
-            <section id="about" class="panel soft-panel">
-                <div class="container">
-                    <h2 class="section-title reveal">About me: an overview</h2>
-
-                    <div class="about-grid">
-                        <div class="card reveal">
-                            <h3>What I do</h3>
-                            <p>I help brands connect with what really matters,
-                                the people. By building a strong, memorable
-                                identity, I make sure your brand doesn’t just
-                                get noticed, it gets remembered.</p>
-                        </div>
-
-                        <div class="card reveal">
-                            <h3>My values</h3>
-                            <p>I personally align with brands that are
-                                purpose-driven
-                                and has a strong value system.
-                                On a personal note, I do care deeply about
-                                social issues and enjoy doing the small things I
-                                can to make someone’s day a bit better. I’m
-                                always open to hearing different perspectives
-                                and opinions on things.</p>
-                        </div>
-
-                        <div class="card reveal">
-                            <h3>Random facts (which no one asked for):</h3>
-                            <ul>
-                                <li>⁠I love driving </li>
-                                <li>⁠⁠I love trying new drinks/food</li>
-                                <li>I can cook a decent meal </li>
-                                <li>I hate pigeons with a passion</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- WORK EXPERIENCE (preserved copy) -->
-            <section id="work-experience" class="panel">
-                <div class="container">
-                    <h2 class="section-title reveal">Work Experience</h2>
-
-                    <div class="jobs">
-                        <div class="card job reveal">
-                            <p class="title">Customer Relations Executive, <a
-                                    href="https://www.linkedin.com/company/cosmixwellness/">Cosmix
-                                    Wellness</a></p>
-                            <p class="location">Bangalore, June 2023 - March
-                                2024</p>
-                            <p class="desc">•⁠ ⁠Responded to daily inquiries
-                                across various social media platforms and email
-                                channels.
-                                •⁠ ⁠Trained new team members on standard
-                                operating procedures and team workflows.
-                                •⁠ ⁠Led the team and regularly
-                                communicated with the CEO regarding urgent
-                                matters and customer preferences.
-                                •⁠ ⁠Collaborated cross-functionally with other
-                                departments to address and fulfill customer
-                                needs.</p>
-                        </div>
-
-                        <div class="card job reveal">
-                            <p class="title">Founder's Office - Marketing and
-                                Growth, <a
-                                    href="https://www.linkedin.com/company/swara-voice-of-women/">SwaraVOW</a></p>
-                            <p class="location">Bangalore, September 2021 - May
-                                2023</p>
-                            <p class="desc">•⁠ ⁠Worked closely with the founder
-                                and developed processes for marketing, customer
-                                relations and collaborations.
-                                •⁠ ⁠Acted as SwaraVOW’s brand representative at
-                                multiple exhibitions across India.
-                                •⁠ ⁠Oversaw front-end customer service across
-                                diverse online and offline sales channels.
-                                •⁠ ⁠Built and expanded brand presence through
-                                both digital (Instagram content, Shopify
-                                newsletters) and traditional marketing
-                                platforms.
-                                •⁠ ⁠Managed coordination between production,
-                                inventory, and logistics teams to align supply
-                                with customer demand and preferences.</p>
-                        </div>
-
-                        <div class="card job reveal">
-                            <p class="title">Customer Success Intern, <a
-                                    href="https://www.linkedin.com/company/eatwithposha/">Posha
-                                    (formerly Nymble)</a></p>
-                            <p class="location">Bangalore, June 2022 - October
-                                2022</p>
-                            <p class="desc">•⁠ ⁠Supported and guided beta users,
-                                escalating their feedback and issues to the
-                                technical team for resolution.
-                                •⁠ ⁠Onboarded and trained new team members on
-                                Customer Success processes and best practices.
-                                •⁠ ⁠Handled partnership coordination and
-                                collaboration efforts with restaurants across
-                                Bangalore.</p>
-                        </div>
-
-                        <div class="card job reveal">
-                            <p class="title">Social Media Manager and Public
-                                Relations Executive, <a href>YellowClub</a></p>
-                            <p class="location">Remote, May 2020 - July 2021</p>
-                            <p class="desc">•⁠ ⁠Helped establish the social
-                                media presence for a mental health initiative
-                                launched during the COVID-19 pandemic.
-                                •⁠ ⁠Led a creative team in brainstorming and
-                                executing engaging, relatable content across
-                                platforms.
-                                •⁠ ⁠Authored impactful post copy and captions
-                                that grew the page’s organic following from
-                                1,000 to 20,000+ organically.
-                                •⁠ ⁠Managed brand collaborations to boost
-                                visibility and audience reach.
-                                •⁠ ⁠Collaborated with mental health
-                                professionals to verify content accuracy and
-                                conducted interviews to feature their profiles
-                                on the platform and app.</p>
-                        </div>
-                    </div>
-
-                    <div id="qualifications" class="qualifications reveal">
-                        <h3 style="margin-top:28px;">Qualifications</h3>
-                        <div class="cards">
-                            <div class="card">
-                                <p style="font-weight:700;">Masters in Brand
-                                    Strategy and Management</p>
-                                <p>IED Milano, 2024 - 2025</p>
-                                <p>Mid-Year Project – Stock
-                                    Spirits | <strong>Clan Campbell Christmas
-                                        Campaign</strong>.</p>
-                                <ul>
-                                    <li>Conducted market research and consumer
-                                        analysis to guide campaign
-                                        strategy.</li>
-                                    <li>Delivered strategic recommendations for
-                                        festive brand engagement.</li>
-                                    <li>Designed integrated digital and offline
-                                        activations tailored to the Italian
-                                        market.</li>
-                                </ul>
-                            </div>
-
-                            <div class="card">
-                                <p style="font-weight:700;">Bachelors in
-                                    Economics, English and Journalism</p>
-                                <p>Kristu Jayanti University Bangalore,
-                                    2019-2022</p>
-                                <p>Thesis project in English for the topic
-                                    'Confessional elements in the select poems of Kamala Das'
-                                    , Individual in-depth research and analysis
-                                    into three poems by Kamala Das</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- PROJECTS (Master's projects indicated) -->
-            <!-- <section id="projects" class="panel soft-panel">
-                <div class="container">
-                    <h2 class="section-title reveal">Highlights</h2>
-
-                    <div class="projects-grid">
-                        <article class="project card reveal">
-                            <div class="project-media">
-                                <img src="./assets/stock_logo_grey.jpg"
-                                    alt="Clan Cambell visual (placeholder)">
-                            </div>
-                            <div class="project-body">
-                                <h3>Clan Cambell</h3>
-                                <p class="muted">Master’s project —
-                                    Instagram-first launch</p>
-                                <p>Built a content-first launch plan, influencer
-                                    seeding and calendar. Drove strong
-                                    engagement and pre-order interest during the
-                                    pilot window.</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </section> -->
-
-            <!-- HIGHLIGHTS & MEDIA (LinkedIn + Instagram embeds) -->
-            <!-- MEDIA SECTION WITH SLIDER -->
-    <section id="highlights" class="panel">
-        <div class="container">
-            <h2 class="section-title reveal">Media</h2>
-            <div class="slider-container">
-                <button class="slider-btn prev">&#10094;</button>
-                <div class="slider-wrapper">
-                    <div class="slider">
-                        <div class="media-card card reveal">
-                            <h3>Clan Campbell Client Pitch</h3>
-                            <div class="embed-wrapper">
-                                <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7331235055824011265?collapsed=1"
-                                        height="549" width="480" frameborder="0" allowfullscreen title="LinkedIn embed"></iframe>
-                            </div>
-                        </div>
-
-                        <div class="media-card card reveal">
-                            <h3>SwaraVOW at Olam Fest, Trivandrum</h3>
-                            <div class="embed-wrapper">
-                                <blockquote class="instagram-media"
-                                            data-instgrm-permalink="https://www.instagram.com/reel/CoQH2MlOpXz/?utm_source=ig_embed&amp;utm_campaign=loading"
-                                            data-instgrm-version="14"></blockquote>
-                            </div>
-                        </div>
-
-                        <div class="media-card card reveal">
-                            <h3>Representing SwaraVOW at BIC, organised by Art and Flea Project</h3>
-                            <div class="embed-wrapper">
-                                <blockquote class="instagram-media"
-                                            data-instgrm-permalink="https://www.instagram.com/reel/CloI-0eDoKk/?utm_source=ig_embed&amp;utm_campaign=loading"
-                                            data-instgrm-version="14"></blockquote>
-                            </div>
-                        </div>
-
-                        <div class="media-card card reveal">
-                            <h3>Copy for post on International Men’s Mental Health Day, YellowClub</h3>
-                            <div class="embed-wrapper">
-                                <blockquote class="instagram-media"
-                                            data-instgrm-permalink="https://www.instagram.com/p/CHxJCleppC1/?utm_source=ig_web_button_share_sheet"
-                                            data-instgrm-version="14"></blockquote>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="slider-btn next">&#10095;</button>
+        <!-- "Centre This" Section -->
+        <section id="centre-this" class="centered-layout">
+            <div class="centered-content">
+                <h2>My Philosophy</h2>
+                <b>From my experiences, I’ve come to understand the importance of connecting with the consumer. Their perception of a brand and its strategy informs how the brand can communicate more meaningfully with its target audience. I believe the essence of marketing lies in empathizing with the consumer, across both OOH and online platforms. I am especially drawn to brands that build emotional connections and actively engage with the social well-being of their communities.</b>
             </div>
-        </div>
-    </section>
+        </section>
 
-            <!-- CONTACT -->
-            <section id="get-in-touch" class="panel soft-panel">
-                <div class="container">
-                    <h1 style="font-size: xx-large;" class="section-title reveal">Get in touch</h1>
-                    <div class="contact-grid">
-                        <div class="card reveal">
-                            <h3>Prefer email?</h3>
-                            <p>Email: <a
-                                    href="mailto:tessamariasams@gmail.com">tessamariasams@gmail.com</a></p>
-                            <p>Based in: Milan, Italy - open to in office &
-                                hybrid roles.</p>
-                            <a class="btn primary"
-                                href="mailto:tessamariasams@gmail.com">Email
-                                me</a>
-                        </div>
+        <!-- The Bento Grid (Work) -->
+        <section class="grid-section" id="work">
+            
+            <!-- Item 1: YellowClub (Visual) -->
+            <article class="grid-item large">
+                <div class="card-header">
+                    <h3>Community & Brand Growth</h3>
+                    <span class="tag">YellowClub</span>
+                </div>
+                <div class="card-body">
+                    <div class="stat-number">20k+ growth</div>
+                    <b>Contributed to a mental health initiative focused on expanding access to therapy during a period of heightened emotional strain. Helped grow the brand’s social media presence from 1K to 20K followers through strategic content creation and collaboration with healthcare professionals to promote stigma-free, accessible mental health support. Worked cross-functionally with nonprofit organizations and graphic designers to develop relevant, audience-resonant content.</b>
+                    <ul class="pill-list">
+                        <li>Content Strategy</li>
+                        <li>Copywriting</li>
+                    </ul>
+                </div>
+                <!-- <div class="asset-wrapper landscape"> -->
+                    <!-- Replace with <img src="..." alt="..."> -->
+                    <!-- <div class="placeholder-text">Social Media Graph</div> -->
+                <!-- </div> -->
+            </article>
 
+            <!-- Item 3: Cosmix (Text Only / Callout) -->
+            <article class="grid-item medium text-only">
+                <div class="card-header">
+                    <h3>Customer Relations & Operations</h3>
+                    <span class="tag">Cosmix</span>
+                </div>
+                <div class="card-body">
+                    <div class="stat-number">Coordination & Collaboration</div>
+                    <b>Led cross-functional communication across departments and senior leadership during a period of rapid organizational growth. Implemented key performance indicators (KPIs) for the Customer Relations team to optimize daily workload management. Oversaw customer complaint resolution and collaborated with internal and external stakeholders to ensure timely and effective outcomes. Supported new product launches through close coordination with the Operations Manager.</b>
+                    <ul class="pill-list">
+                        <li>Leadership</li>
+                        <li>Knowledge Transfer</li>
+                        <li>Integration</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="grid-item wide">
+                <div class="card-header">
+                    <h3>Growth & Marketing</h3>
+                    <span class="tag">SwaraVOW</span>
+                </div>
+                <div class="card-body">
+                    <div class="stat-number">Brand Representative</div>
+                    <b>The Instagram following experienced a remarkable increase, growing from 19,000 to 35,000 followers. This growth was achieved through strategic participation in exhibitions, proactive outreach to influencers, and forming meaningful partnerships with advocates for sustainability and women's empowerment. SwaraVOW holds a special place in my heart, as it has imparted invaluable lessons on the significance of creating a brand that stands for a purpose.</b>
+                    <ul class="pill-list">
+                        <li>Marketing</li>
+                        <li>Copywriting</li>
+                        <li>Public Relations</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Item 2: IED Milano (Text Only / Callout) -->
+            <article class="grid-item medium text-only">
+                <a href="#docs" class="card-link-wrapper">
+                    <div class="card-header">
+                        <h3>Strategy Development</h3>
+                        <span class="tag">Clan Campbell @ IED Milano</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="stat-number">What You Drink Tells Your Story</div>
+                        <b>It was a strategically planned Christmas campaign built on emotional storytelling, leveraging the sentiments and nostalgia associated with the festive season. The strategy was informed by in-depth market research, supported by qualitative and quantitative consumer interviews, and translated into detailed customer journey mapping. A cohesive mix of marketing tools was deployed, including targeted OOH and online activations, alongside structured budget allocation to maximize reach and impact.</b>
+                        <ul class="pill-list">
+                            <li>Market Research</li>
+                            <li>Customer Journey Mapping</li>
+                            <li>Budgeting</li>
+                        </ul>
+                        <div class="mini-cta">View Project PDF ↓</div>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Item 5: Values -->
+            <article class="grid-item">
+                <a href="#docs" class="card-link-wrapper">
+                    <div class="card-header">
+                        <h3>Strategy Development</h3>
+                        <span class="tag">Fidenza Village @ IED Milano</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="stat-number">Community Building</div>
+                        <b>Developed a comprehensive strategy to build a strong community among existing and prospective members of Fidenza Village, based on an in-depth study of Bicester Collection and its Italian counterpart. Proposed a multi-year plan leveraging curiosity as a key engagement driver to attract and retain audiences. The strategy aimed to reposition Fidenza Village from a “place to buy” to a “place to be,” incorporating recurring on-site activations, online integrations, and continuous customer feedback as core elements of sustainable community building.</b>
+                        <ul class="pill-list">
+                            <li>Market Research</li>
+                            <li>Customer Journey Mapping</li>
+                            <li>Budgeting</li>
+                        </ul>
+                        <div class="mini-cta">View Project PDF ↓</div>
+                    </div>
+                    </div>
+                </a>
+            </article>
+
+        </section>
+
+        <!-- Toolkit Section (3x3 Grid) -->
+        <section class="toolkit-section">
+            <div class="toolkit-container">
+                <div class="toolkit-text">
+                    <h2>Core Skills</h2>
+                    <br>
+                    <p>My workflow is powered by a blend of creative and analytical tools. From designing campaigns to crunching market data, these are the engines behind the strategy.</p><br>
+                    <h3>Branding & Strategy</h3>
+                    <div class="list-side">
+                        <ul class="pill-list">
+                            <li>GTM Strategy Development</li>
+                            <li>Brand Positioning</li>
+                            <li>Market Research</li>
+                            <li>Qualitative and Quantivative Research</li>
+                            <li>Campaign Planning</li>
+                        </ul>
+                    </div>
+                    <br>
+                    <h3>Social Media & Growth</h3>
+                    <div class="list-side">
+                        <ul class="pill-list">
+                            <li>Organic Audience Scaling</li>
+                            <li>Influencer Outreach</li>
+                            <li>Community Engagement</li>
+                        </ul>
+                    </div>
+                    <br>
+                    <h3>Customer Relations</h3>
+                    <div class="list-side">
+                        <ul class="pill-list">
+                            <li>CRM Management</li>
+                            <li>Data-Driven Process Optimization</li>
+                            <li>SLA Compliance</li>
+                            <li>Customer Journey Mapping</li>
+                        </ul>
+                    </div>
+                    <br>
+                    <h3>Operations</h3>
+                    <div class="list-side">
+                        <ul class="pill-list">
+                            <li>End-to-End Logistics</li>
+                            <li>Stakeholder Management</li>
+                            <li>Shopify E-commerce Digitization</li>
+                            <li>Cross-functional Team Leadership</li>
+                        </ul>
                     </div>
                 </div>
-            </section>
+                <div class="toolkit-grid">
+                    <!-- 9 Tools -->
+                    <div class="tool-item">
+                        <img src="./assets/logos/canva.png" alt="">
+                    </div>
+                    <div class="tool-item">
+                        <img src="./assets/logos/freshdesk.svg" alt="">
+                    </div>
+                    <div class="tool-item">
+                        <img src="./assets/logos/gsuite.png" alt="">
+                    </div>
+                    <div class="tool-item">
+                        <img src="./assets/logos/hubspot.svg.png" alt="">
+                    </div>
+                    <div class="tool-item">
+                        <img src="./assets/logos/mailchimp.png" alt="">
+                    </div>
+                    <div class="tool-item">
+                        <img src="./assets/logos/meta.png" alt="">
+                    </div>
+                    <div class="tool-item">
+                        <img src="./assets/logos/ms-suite.png" alt="">
+                    </div>
+                    <div class="tool-item">
+                        <img src="./assets/logos/shopify.svg.png" alt="">
+                    </div>
+                    <div class="tool-item">
+                        <img src="./assets/logos/slack.png" alt="">
+                    </div>
 
-            <footer class="site-footer">
-                <div class="container footer-inner">
-                    <p>Made by Gushy Buba © <span id="year"></span> Tessa
-                        Maria</p>
-                    <nav aria-label="Footer">
-                        <a class="btn ghost" href="#hero">Back to top</a> ·
-                        <a class="btn primary"
-                            href="./assets/Tessa_Maria_Resume.pdf"
-                            download>Download my resume</a>
-                    </nav>
                 </div>
-            </footer>
-        </main>
+            </div>
+        </section>
 
-        <script src="script.js" defer></script>
-    </body>
+        <!-- Resume List -->
+        <section class="resume-list">
+            <h2 class="section-title">Experience & Education</h2>
+            
+            <div class="resume-item">
+                    <div class="resume-date">2024 — 2025</div>
+                    <div class="resume-role">Masters in Brand Strategy and Management</div>
+                    <div class="resume-place"><a href="https://www.ied.it/chi-siamo?_gl=1*1nj5b6v*_up*MQ..*_gs*MQ..*_ga*MjA2MDExODQxMS4xNzY3NzMzNTc3*_ga_ZBNG848S05*czE3Njc3MzM1NzckbzEkZzAkdDE3Njc3MzM1NzckajYwJGwwJGgw&gclid=Cj0KCQiAgvPKBhCxARIsAOlK_EqcYR9OOoYjc3UmdDIigc4L5yHssWqGObzJUMMwWvCEpZVpXHo4SIkaApJkEALw_wcB&gbraid=0AAAAADfbm3ppgdIoRCvqtgnw0LnYS794-">IED Milano</a></div>
+            </div>
+
+            <div class="resume-item">
+                <div class="resume-date">2023 — 2024</div>
+                <div class="resume-role">Customer Relations Executive</div>
+                <div class="resume-place"><a href="https://cosmix.in">Cosmix Wellness, Bangalore</a></div>
+            </div>
+
+            <div class="resume-item">
+                <div class="resume-date">2021 — 2023</div>
+                <div class="resume-role">Marketing & Growth</div>
+                <div class="resume-place"><a href="https://www.swaravow.com">SwaraVOW, Bangalore</a></div>
+            </div>
+
+            <div class="resume-item">
+                <div class="resume-date">2022 — 2022</div>
+                <div class="resume-role">Customer Success Intern</div>
+                <div class="resume-place"><a href="https://www.posha.com">Posha (Nymble)</a></div>
+            </div>
+
+            <div class="resume-item">
+                <div class="resume-date">2020 — 2021</div>
+                <div class="resume-role">Social Media Manager</div>
+                <div class="resume-place"><a href="https://www.instagram.com/yellowclubofficial?igsh=MTV6cXFreTUzMWVwdg==">YellowClub, Remote</a></div>
+            </div>
+
+            <div class="resume-item">
+                <div class="resume-date">2019 — 2022</div>
+                <div class="resume-role">Bachelors in Economics, Journalism and English Literature</div>
+                <div class="resume-place"><a href="https://kristujayanti.edu.in">Kristu Jayanti College, Bengaluru</a></div>
+            </div>
+
+        </section>
+
+        <!-- PDF Documents Section -->
+        <section id="docs" class="docs-section container">
+            <h2 class="section-title">Selected Projects</h2>
+            
+            <div class="pdf-container">
+                <!-- Doc 1: Clan Campbell -->
+                <div class="pdf-wrapper">
+                    <div class="pdf-header">
+                        <h3>Clan Campbell Campaign</h3>
+                        <span class="tag">Strategy</span>
+                    </div>
+                    <div class="pdf-embed-box">
+                        <!-- Replace src with actual file path -->
+                        <iframe src="assets/slides/pcc.pdf" title="Clan Campbell Project"></iframe>
+                        <div class="pdf-fallback">
+                            <p>Unable to display PDF.</p>
+                            <a href="assets/slides/pcc.pdf" class="btn-secondary" target="_blank">Download File</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doc 2: Fidenza -->
+                <div class="pdf-wrapper">
+                    <div class="pdf-header">
+                        <h3>Fidenza Project</h3>
+                        <span class="tag">Research</span>
+                    </div>
+                    <div class="pdf-embed-box">
+                        <!-- Replace src with actual file path -->
+                        <iframe src="./assets/slides/pfv.pdf" title="Fidenza Project"></iframe>
+                        <div class="pdf-fallback">
+                            <p>Unable to display PDF.</p>
+                            <a href="assets/slides/pfv.pdf" class="btn-secondary" target="_blank">Download File</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contact">
+            <div class="footer-content">
+                <h2>Let's work together.</h2>
+                <a href="mailto:tessamariasams@gmail.com" class="email-link">tessamariasams@gmail.com</a>
+                <div class="footer-meta">
+                    <span>Based in Milan, IT</span>
+                    <span id="year">2026</span>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+    <script src="script.js"></script>
+</body>
 </html>
